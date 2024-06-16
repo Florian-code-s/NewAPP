@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDoApp</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+<div class="container">
+    <div class="todoMain">
+        <h1 class="todoMain_main">To-Do List</h1>
+        <div class="row">
+            <input type="text" id="input-first" placeholder="Beginnen Sie zu tippen.....">
+            <button id="todo-btn">Add</button>
+        </div>
+        <div class="filter-buttons">
+            <button id="filter-all">All</button>
+            <button id="filter-complete" data-filter="completed">Completed</button>
+            <button id="filter-active" data-filter="active">Active</button>
+        </div>
+        <div class="filter-by-id">
+            <input type="text" id="filter-input" placeholder="Text zum filtern eingeben....">
+        </div>
+        <ul id="todo-list">
+        </ul>
+    </div>
+</div>
+<script src="fct.js"></script>
+</body>
+</html>
