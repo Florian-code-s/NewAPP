@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wahrscheinlichkeitsrechner</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Wahrscheinlichkeitsrechner</h1>
+    <form id="probabilityForm">
+        <label for="successes">Erfolge (k):</label>
+        <input type="number" id="successes" required>
+
+        <label for="trials">Versuche (n):</label>
+        <input type="number" id="trials" required>
+
+        <label for="probability">Erfolgswahrscheinlichkeit (p):</label>
+        <input type="number" id="probability" step="0.01" required>
+
+        <label for="method">Berechnungsmethode:</label>
+        <select id="method" required>
+            <option value="binomial">Binomiale Wahrscheinlichkeit (P(X = k))</option>
+            <option value="cumulative">Kumulative Wahrscheinlichkeit (P(X ≤ k))</option>
+        </select>
+
+        <button type="submit">Berechnen</button>
+    </form>
+
+    <h2>Random Cat Image</h2>
+    <button id="fetchCatImage">Fetch Random Cat Image</button>
+    <div id="catImageResult"></div>
+
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
